@@ -21,14 +21,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(providers: [
-      BlocProvider<PersonListCubit>(create: (_)=> sl<PersonListCubit>()),
+      BlocProvider<PersonListCubit>(create: (_)=> sl<PersonListCubit>()..loadPerson()),
       BlocProvider<SearchBloc>(create: (_)=>sl<SearchBloc>()),
 
     ], child: MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        backgroundColor: AppColors.mainBackGround,
-        scaffoldBackgroundColor: AppColors.callBackGround,
+        scaffoldBackgroundColor : AppColors.mainBackGround,
+      backgroundColor : AppColors.callBackGround,
         primarySwatch: Colors.blue,
       ),
       home: const HomePage(),
