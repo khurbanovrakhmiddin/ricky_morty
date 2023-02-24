@@ -1,0 +1,1 @@
+import 'dart:ui';import 'package:flutter/material.dart';class AppColors{  static const Color mainBackGround = Color(0xff23282f);  static const Color callBackGround = Color(0xff3c282f);  static const Color greyColor = Colors.grey;}
