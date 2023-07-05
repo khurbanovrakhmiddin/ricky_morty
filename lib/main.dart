@@ -24,6 +24,7 @@ class MyApp extends StatelessWidget {
       BlocProvider<PersonListCubit>(create: (_)=> sl<PersonListCubit>()..loadPerson()),
       BlocProvider<SearchBloc>(create: (_)=>sl<SearchBloc>()),
 
+
     ], child: MaterialApp(
       title: 'Flutter Demo',
 
